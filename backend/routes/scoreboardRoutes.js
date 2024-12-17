@@ -1,9 +1,8 @@
 const express = require('express');
-const { getScoreboard } = require('../controllers/scoreboardController');
-
 const router = express.Router();
+const { getTopPlayers } = require('../controllers/scoreboardController');
 
-// Route to get the scoreboard
-router.get('/', getScoreboard);
+// Route to fetch top 5 players
+router.get('/', getTopPlayers);
 
 module.exports = router;

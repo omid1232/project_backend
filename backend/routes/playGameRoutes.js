@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const {
-    getCurrentQuestion,
-    getAnsweredQuestions,
-    submitAnswer
+  getCurrentQuestion,
+  getAnsweredQuestions,
+  submitAnswer,
 } = require('../controllers/playGameController');
 
 // Routes for Play Game
